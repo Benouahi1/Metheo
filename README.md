@@ -19,13 +19,13 @@
 * Replace This Line ( App.js - Line : 42 )
 
 ```javascript
-   fetch('https://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=***********************')  
+ 
 ```
 
 * With ( Replace The Stars With Your API KEY )
 
 ```javascript
-   fetch('http://api.openweathermap.org/data/2.5/weather?q='+this.state.city+'&appid=***')  
+
 ```
 
 ## Built With
