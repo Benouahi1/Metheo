@@ -38,21 +38,3 @@
 ## Tutorial To Get API KEY
 
 
-## Sample Preview
-
-<img src="" width="250" height="500">
-
-
-## Authors
-
-* **Belgin Android** - *All Works* - [Belgin Android]()
-
-## Issues ?
-
-* Contact Me At [Instagram]()
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
