@@ -5,5 +5,5 @@ const {loginUser, registerUser, verifyUser} = require('../controllers/userContro
 
 router.post('/login',loginUser)
 router.post('/register',registerUser)
-router.post('/verifyUser/:activationCode',verifyUser)
+
 module.exports = router
