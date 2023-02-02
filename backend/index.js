@@ -5,8 +5,8 @@ const db = require('./db')
 const cors = require('cors')
 const port = process.env.PORT || 8000
 const {errorHandler} = require('./middlewar/errorMiddlewar')
-const userRoute = require('./routes/userRouter')
 
+const userRoute = require('./routes/userRouter')
 
 db();
 const app = express()
