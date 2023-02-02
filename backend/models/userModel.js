@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 const userSchema = mongoose.Schema({
-    fullname : {
+    userName : {
         type : String,
         require : true,
     },
@@ -14,34 +14,7 @@ const userSchema = mongoose.Schema({
         type : String,
         require : true 
     },
-    address : {
-        type : String,
-        require : true 
-    },
-    city : {
-        type : String,
-        require : true
-    },
-    state : {
-        type : String,
-        require : true
-    },
-    zip : {
-        type : Number,
-        require : true
-    },
-    country : {
-        type : String,
-        require : true 
-    },
-    isActive :{
-        type : Boolean,
-        default: false
-    },
-    activationCode: {
-        type : String
-    }
-},
+ },
 {
     timestamps: true,
 })

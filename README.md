@@ -8,13 +8,11 @@
 
 > Run npm install
 
-> TODO
-
-> Run The App
+> expo start
 
 ## TODO 
 
-* Go To https://openweathermap.org/api To Get An API KEY
+!* Go To https://openweathermap.org/api To Get An API KEY
 
 * Replace This Line ( App.js - Line : 42 )
 
