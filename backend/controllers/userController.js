@@ -42,7 +42,7 @@ const registerUser = asyncHandler(async(req,res)=>{
     if(user){
         res.status(201).json({
         _id : user.id,
-        userName : fullname,
+        userName : userName,
         email : email})
        } else{
     res.status(400) 
@@ -57,14 +57,14 @@ const loginUser = asyncHandler(async (req, res) => {
     const password = req.body.password
     const user = await User.findOne({ email })
 
-    if (user && (await bcrypt.compare(password, user.password)) && user.isActive) {
+    if (user && (await bcrypt.compare(password, user.password))) {
       res.json({
         user:user.role,
         token: generateToken(user._id),
       })
     } else {
       res.status(400)
-      console.log('Veuiller')
+      console.log('Erour')
      
     }
   })
@@ -73,7 +73,7 @@ const loginUser = asyncHandler(async (req, res) => {
 // Generate JWT
 const generateToken = (id) => {
     return jwt.sign({ id }, "abc123", {
-      expiresIn: '30d',
+      expiresIn: '1d',
     })
   }
 
